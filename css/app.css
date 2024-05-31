@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Head Section */
+.head-element-section {
+    margin: auto;
+    min-height: 100vh;
+    background: url('../assets/image/Wireframe\ -\ 1.jpg') rgba(22, 20, 21, 0.384);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.head-element-section {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.head-element-section .container .title-wedding h6 {
+    padding-top: 60px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.head-element-section .container .title-nick-title {
+    display: flex;
+    align-items: center;
+}
+
+.head-element-section .container .title-nick-title h1 {
+    margin: 0;
+    font-size: 90px;
+    font-family: "Satisfy", cursive;
+    color: #fff;
+}
+
+.head-element-section .container .title-heading span {
+    font-size: 50px;
+    font-family: "Satisfy", cursive;
+    color: #fff;
+}
+
+.head-element-section .container .btn-online {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    font-family: inter;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.head-element-section .container .btn-online:hover {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    font-family: inter;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.head-element-section .container .title-tamu {
+    padding: 30px 0;
+}
+
+.head-element-section .container .title-tamu h6 {
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    font-family: inter;
+}
+
+.head-element-section .container .title-tamu p {
+    color: #fff;
+    font-family: inter;
+}
+
+.head-element-section .container .title-tamu h3 {
+    color: #fff;
+    font-family: inter;
+}
+
+/* Invite */
+.element-invite {
+    margin: auto;
+    width: 550px;
+    min-height: 100vh;
+    background-image: url('../assets/image/BG-MEMPELAI.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    font-family: inter;
+}
+
+.element-invite .container {
+    display: flex;
+    padding: 60px 60px;
+    text-align: center;
+    align-content: center;
+}
+
+.element-invite .container .content-items-invite {
+    background: #fff;
+    min-height: 500px;
+    border-radius: 24px;
+    padding: 30px 20px;
+}
+
+.element-invite .container .title-heading h4 {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300px;
+}
+
+/* Akad */
+.element-akad {
+    margin: auto;
+    width: 550px;
+    min-height: 100vh;
+}
+
+.element-akad .container {
+    padding: 30px 20px;
+}
+
+.element-akad .title-heading-akd h1 {
+    font-family: inter;
+    text-align: center;
+}
+
+.element-akad .container .content-tgl-items {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.element-akad .container .content-tgl-items h6 {
+    margin: auto;
+    font-size: 25px;
+    font-family: inter;
+    font-weight: 400;
+}
+
+.element-akad .container .content-tgl-items .items-date h6 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.element-akad .container .content-tgl-items .items-date {
+    padding: 0 10px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+/* Qoutes */
+.element-qoutes {
+    margin: auto;
+    width: 550px;
+    min-height: 100vh;
+}
+
+/* Galery */
+.element-galery {
+    margin: auto;
+    width: 550px;
+    min-height: 100vh;
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 600px) {
+    .head-element-section {
+        width: 600px;
+        margin: auto;
+        min-height: 100vh;
+        background: url('../assets/image/Wireframe\ -\ 1.jpg') rgba(22, 20, 21, 0.384);
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+    }
+}
