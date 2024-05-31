@@ -25,20 +25,26 @@ body {
 
 .head-element-section .container .title-wedding h6 {
     padding-top: 60px;
-    font-size: 20px;
+    letter-spacing: 5px;
+    font-size: 17px;
     color: #fff;
+    font-family: poppins;
+    font-weight: 400;
 }
 
 .head-element-section .container .title-nick-title {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .head-element-section .container .title-nick-title h1 {
-    margin: 0;
+    display: flex;
     font-size: 90px;
     font-family: "Satisfy", cursive;
     color: #fff;
+    text-align: center;
+    font-weight: 800;
 }
 
 .head-element-section .container .title-heading span {
@@ -72,20 +78,25 @@ body {
 }
 
 .head-element-section .container .title-tamu h6 {
-    margin: 0;
+    margin: auto;
     color: white;
-    font-size: 16px;
-    font-family: inter;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 600;
 }
 
 .head-element-section .container .title-tamu p {
+    padding: 5px 0;
     color: #fff;
-    font-family: inter;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: 400;
 }
 
 .head-element-section .container .title-tamu h3 {
     color: #fff;
-    font-family: inter;
+    font-family: poppins;
+    font-size: 17px;
 }
 
 /* Invite */
@@ -93,10 +104,7 @@ body {
     margin: auto;
     width: 550px;
     min-height: 100vh;
-    background-image: url('../assets/image/BG-MEMPELAI.jpg');
-    background-size: cover;
-    background-position: center;
-    color: black;
+    background-color: #BFC1CB;
     font-family: inter;
 }
 
@@ -111,13 +119,55 @@ body {
     background: #fff;
     min-height: 500px;
     border-radius: 24px;
-    padding: 30px 20px;
+    padding: 60px 20px;
+}
+
+.element-invite .container .content-items-invite span {
+    margin-top: -60px;
+    font-size: 60px;
+    font-family: "Satisfy", cursive;
+}
+
+.element-invite .container .title-heading h3 {
+    font-size: 25px;
+    font-family: poppins;
+    font-weight: 700;
 }
 
 .element-invite .container .title-heading h4 {
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
-    font-weight: 300px;
+    font-weight: 400px;
+    font-family: poppins;
+    line-height: 25px;
+}
+
+.element-invite .container .title-mempelai-perempuan {
+    padding: 20px 0;
+}
+
+.element-invite .container .title-mempelai-perempuan h1 {
+    font-family: "Satisfy", cursive;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.element-invite .container .title-mempelai-pria h1 {
+    font-family: "Satisfy", cursive;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.element-invite .container .title-mempelai-perempuan h5 {
+    padding: 5px 0;
+    font-family: poppins;
+    font-size: 15px;
+}
+
+.element-invite .container .title-mempelai-pria h5 {
+    padding: 5px 0;
+    font-family: poppins;
+    font-size: 15px;
 }
 
 /* Akad */
@@ -125,6 +175,7 @@ body {
     margin: auto;
     width: 550px;
     min-height: 100vh;
+    background-color: #D7D7D7;
 }
 
 .element-akad .container {
@@ -132,8 +183,10 @@ body {
 }
 
 .element-akad .title-heading-akd h1 {
-    font-family: inter;
+    font-family: poppins;
     text-align: center;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .element-akad .container .content-tgl-items {
@@ -167,6 +220,23 @@ body {
     margin: auto;
     width: 550px;
     min-height: 100vh;
+    background-color: #BFC1CB;
+}
+
+.element-qoutes .container {
+    padding: 30px 20px;
+}
+
+.element-qoutes .container img {
+    width: 100%;
+    border: 10px solid white;
+    border-radius: 14px;
+}
+
+.element-qoutes .container p {
+    padding: 10px 0;
+    font-size: 15px;
+    font-family: poppins;
 }
 
 /* Galery */
@@ -174,6 +244,35 @@ body {
     margin: auto;
     width: 550px;
     min-height: 100vh;
+    background-color: #D7D7D7;
+}
+
+/* Maps */
+.element-maps {
+    margin: auto;
+    width: 550px;
+    min-height: 100vh;
+    background-color: #BFC1CB;
+}
+
+.element-maps .container {
+    padding: 60px 24px;
+    align-items: center;
+    justify-items: center;
+}
+
+.element-maps .container h1 {
+    padding: 20px 0;
+    font-size: 45px;
+    font-family: poppins;
+}
+
+/* RSVP */
+.element-rsvp {
+    margin: auto;
+    width: 550px;
+    min-height: 100vh;
+    background-color: #D7D7D7;
 }
 
 /* Mobile Responsive */
