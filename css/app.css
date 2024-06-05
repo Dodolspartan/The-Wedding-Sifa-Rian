@@ -191,9 +191,10 @@ body {
 /* Akad */
 .element-akad {
     margin: auto;
-    width: 600px;
+    width: 400px;
     min-height: 100vh;
-    background-color: #D7D7D7;
+    background-image: url('../assets/image/bgdate.jpg');
+    background-size: cover;
     font-family: poppins;
 }
 
@@ -228,9 +229,10 @@ body {
 /* Qoutes */
 .element-qoutes {
     margin: auto;
-    width: 600px;
+    width: 400px;
     min-height: 100vh;
-    background-color: #BFC1CB;
+    background-image: url('../assets/image/BG-\ RES.jpg');
+    background-size: cover;
 }
 
 .element-qoutes .container {
@@ -252,9 +254,10 @@ body {
 /* Galery */
 .element-galery {
     margin: auto;
-    width: 600px;
+    width: 400px;
     min-height: 100vh;
-    background-color: #D7D7D7;
+    background-image: url('../assets/image/BG-\ RES.jpg');
+    background-size: cover;
 }
 
 .element-galery .container p {
@@ -265,7 +268,7 @@ body {
 .element-galery .container {
     align-items: center;
     text-align: center;
-    padding: 60px;
+    padding: 30px;
 }
 
 .element-galery .container .element-content-galery {
@@ -282,13 +285,14 @@ body {
 /* Maps */
 .element-maps {
     margin: auto;
-    width: 600px;
+    width: 400px;
     min-height: 100vh;
-    background-color: #BFC1CB;
+    background-image: url('../assets/image/BG-\ RES.jpg');
+    background-size: cover;
 }
 
 .element-maps .container {
-    padding: 60px 24px;
+    padding: 60px 15px;
     align-items: center;
     justify-items: center;
 }
@@ -302,16 +306,16 @@ body {
 /* RSVP */
 .element-rsvp {
     margin: auto;
-    padding: 30px 50px;
-    width: 600px;
+    padding: 30px 20px;
+    width: 400px;
     min-height: 100vh;
-    background-color: #D7D7D7;
-
+    background-image: url('../assets/image/BG-\ RES.jpg');
+    background-size: cover;
 }
 
 .element-rsvp .container p {
     font-family: poppins;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .element-rsvp .container .element-kado-items {
@@ -321,14 +325,18 @@ body {
     gap: 10px;
 }
 
+.element-rsvp .container .element-kado-items img {
+    width: 120px;
+}
+
 .element-rsvp .container .element-kado-items .bank-mandiri {
-    padding: 60px 30px;
+    padding: 40px 25px;
     background-color: #fff;
     border-radius: 8px;
 }
 
 .element-rsvp .container .element-kado-items .dana-items {
-    padding: 60px 30px;
+    padding: 40px 25px;
     background-color: #fff;
     border-radius: 8px;
 }
