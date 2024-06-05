@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sifa & Rian</title>
+    <title>THE WENDDING OF SIFA & RIAN</title>
     <!-- Style Css -->
     <link rel="stylesheet" href="./css/app.css">
     <!-- Google Font -->
+    <link href="https://fonts.cdnfonts.com/css/brown-sugar-2" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
@@ -77,35 +78,47 @@
     <!-- Akad -->
     <section class="element-akad" id="akd">
         <div class="container">
-            <div class="title-heading-akd">
-                <h1>Akad Nikah</h1>
-            </div>
-            <div class="content-tgl-items">
-                <div class="items-day">
-                    <h6>Minggu</h6>
+            <div class="element-akad-nikah">
+                <div class="title-heading-akad">
+                    <h1 class="text-center">AKAD NIKAH</h1>
                 </div>
-                <div class="items-date">
-                    <h6>30</h6>
+                <div class=" title-date-akad">
+                    <h2 class="text-center">30</h2>
                 </div>
-                <div class="items-moth">
-                    <h6>Juni</h6>
+                <div class=" title-paraf-akad">
+                    <p class="text-center">07.00 WIB s/d 09.00</p>
+                    <h3 class="text-center">Sunday,Juni 2024</h3>
                 </div>
             </div>
-
-            <div class="title-hours text-center">
-                <h6>Pukul 07.00 WIB ~ Selesai</h6>
+            <div class=" element-resep-nikah">
+                <div class="title-heading-akad">
+                    <h1 class="text-center">RESEPSI</h1>
+                </div>
+                <div class=" title-date-akad">
+                    <h2 class="text-center">30</h2>
+                </div>
+                <div class=" title-paraf-akad">
+                    <p class="text-center">Pukul 10.00 WIB</p>
+                    <h3 class="text-center">Sunday,Juni 2024</h3>
+                </div>
+            </div>
+            <div class="element-save-date text-center py-4">
+                <a href="" class=" btn-save-date">Save Date</a>
             </div>
         </div>
     </section>
     <!-- #endregion -->
     <!-- Qoutes -->
-    <section class="element-qoutes" id="qts">
+    <section class=" element-qoutes" id="qts">
         <div class="container">
             <img src="./assets/image/Wireframe - 1.jpg" alt="">
             <div class="title-paraf text-center">
-                <p>“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari
-                    jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu
-                    rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda
+                <p>“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+                    pasangan-pasangan untukmu dari
+                    jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia
+                    menjadikan di antaramu
+                    rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar
+                    terdapat tanda-tanda
                     (kebesaran Allah) bagi kaum yang berpikir.”</p>
                 <strong>(Qs. Ar-Rum : 21)</strong>
             </div>
@@ -118,6 +131,13 @@
     <section class=" element-galery" id="gly">
         <div class="container">
             <h1>Galery</h1>
+            <p>Kami bersyukur, dipertemukan Allah diwaktu terbaik, <br> Kini kami menanti hari istimewa kami.</p>
+            <div class="element-content-galery">
+                <img src="./assets/galery/Foto LP Udangan Digital/IMG_8295 c.jpeg" alt="">
+                <img src="./assets/galery/Foto LP Udangan Digital/IMG_8301 c.jpeg" alt="">
+                <img src="./assets/galery/Foto LP Udangan Digital/IMG_8320 c.jpeg" alt="">
+                <img src="./assets/galery/Foto LP Udangan Digital/IMG_8366 c.jpeg" alt="">
+            </div>
         </div>
     </section>
     <!-- #endregion -->
@@ -138,14 +158,75 @@
     <section class="element-rsvp">
         <div class="container">
             <div class="title-heading">
-                <h1 class="text-center">Ucapan & Doa</h1>
+                <h1 class="text-center">Wedding Gift</h1>
+                <p class="text-center">
+                    Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika memberi adalah
+                    ungkapan
+                    tanda kasih Anda, Anda dapat memberi kado secara cashless
+                </p>
             </div>
+            <div class="element-kado-items text-center">
+                <div class="bank-mandiri">
+                    <img src="./assets/payment/Property 1=Bank, Property 2=Mandiri.png" alt="">
+                </div>
+                <div class="dana-items">
+                    <img src="./assets/payment/Property 1=Mobile Payment, Property 2=Dana.png" alt="">
+                </div>
+            </div>
+            <div class="element-date">
+                <div id="countdown"></div>
+            </div>
+            <div class="rsvp-fitur">
+                <form id="rsvpForm">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="attendance">Kehadiran:</label>
+                    <select id="attendance" name="attendance" required>
+                        <option value="yes">Hadir</option>
+                        <option value="no">Tidak Hadir</option>
+                    </select>
+
+                    <button type="submit">Kirim RSVP via WhatsApp</button>
+                </form>
+                <p id="responseMessage"></p>
+            </div>
+
         </div>
     </section>
 
+    <!-- End -->
+    <!-- footer -->
+    <section class="footer">
 
+    </section>
+    <!-- End -->
 
+    <script>
+        document.getElementById('rsvpForm').addEventListener('submit', function (event) {
+            event.preventDefault();
 
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const attendance = document.getElementById('attendance').value;
+
+            const message = `Nama: ${name}%0AEmail: ${email}%0AKehadiran: ${attendance === 'yes' ? 'Hadir' : 'Tidak Hadir'}`;
+            const phoneNumber = '6281234567890'; // Ganti dengan nomor WhatsApp yang dituju
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+
+            window.open(whatsappUrl, '_blank');
+
+            const responseMessage = document.getElementById('responseMessage');
+            responseMessage.textContent = `Terima kasih, ${name}! RSVP Anda telah dikirim via WhatsApp.`;
+
+            // Reset form setelah submit
+            document.getElementById('rsvpForm').reset();
+        });
+
+    </script>
 
     <script src=" ./js/app.js">
     </script>

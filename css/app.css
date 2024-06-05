@@ -9,8 +9,9 @@ body {
 .head-element-section {
     margin: auto;
     min-height: 100vh;
-    background: url('../assets/image/Wireframe\ -\ 1.jpg') rgba(22, 20, 21, 0.384);
+    background: url('../assets/image/Wireframe\ -\ 1.jpg');
     background-size: cover;
+    background-color: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
     background-position: center;
     background-blend-mode: multiply;
 }
@@ -176,43 +177,35 @@ body {
     width: 600px;
     min-height: 100vh;
     background-color: #D7D7D7;
+    font-family: poppins;
 }
 
 .element-akad .container {
-    padding: 30px 20px;
+    padding: 120px 20px;
 }
 
-.element-akad .title-heading-akd h1 {
-    font-family: poppins;
-    text-align: center;
+.element-akad .container .element-akad-nikah {
+    padding: 60px 0;
+}
+
+.element-akad .container .title-heading-akad h1 {
+    font-weight: 700;
     font-size: 40px;
-    font-weight: 700;
 }
 
-.element-akad .container .content-tgl-items {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-}
-
-.element-akad .container .content-tgl-items h6 {
-    margin: auto;
+.element-akad .container .title-date-akad h2 {
     font-size: 25px;
+}
+
+.element-akad .container .element-save-date .btn-save-date {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
     font-family: inter;
-    font-weight: 400;
-}
-
-.element-akad .container .content-tgl-items .items-date h6 {
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.element-akad .container .content-tgl-items .items-date {
-    padding: 0 10px;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
+    border-radius: 8px;
+    font-size: 12px;
 }
 
 /* Qoutes */
@@ -247,6 +240,28 @@ body {
     background-color: #D7D7D7;
 }
 
+.element-galery .container p {
+    font-size: 14px;
+    font-family: poppins;
+}
+
+.element-galery .container {
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+}
+
+.element-galery .container .element-content-galery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid: 5px;
+}
+
+.element-galery .container .element-content-galery img {
+    width: 100%;
+    padding: 10px 7px;
+}
+
 /* Maps */
 .element-maps {
     margin: auto;
@@ -270,16 +285,79 @@ body {
 /* RSVP */
 .element-rsvp {
     margin: auto;
+    padding: 30px 50px;
     width: 600px;
     min-height: 100vh;
     background-color: #D7D7D7;
+
+}
+
+.element-rsvp .container p {
+    font-family: poppins;
+    font-size: 15px;
+}
+
+.element-rsvp .container .element-kado-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 10px;
+}
+
+.element-rsvp .container .element-kado-items .bank-mandiri {
+    padding: 60px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.element-rsvp .container .element-kado-items .dana-items {
+    padding: 60px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    text-align: left;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    background-color: #25D366;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1DA851;
+}
+
+#responseMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4CAF50;
 }
 
 /* Mobile Responsive */
 @media only screen and (max-width: 600px) {
 
     .head-element-section {
-        width: 600px;
+        width: 320px;
         margin: auto;
         min-height: 150vh;
         background: url('../assets/image/Wireframe\ -\ 1.jpg') rgba(22, 20, 21, 0.384);
@@ -370,6 +448,7 @@ body {
     .element-akad .container {
         padding: 30px 20px;
     }
+
 
     .element-akad .title-heading-akd h1 {
         font-family: poppins;
