@@ -385,6 +385,8 @@ button:hover {
         width: 350px;
         margin: auto;
         min-height: 100vh;
+        background: url('../assets/image/BG-MEMPELAI.jpg');
+        background-size: cover;
     }
 
     .head-element-section {
