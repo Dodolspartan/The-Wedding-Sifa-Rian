@@ -382,19 +382,15 @@ button:hover {
 @media only screen and (max-width: 600px) {
 
     .head-element-section {
-        width: 320px;
+        width: 350px;
         margin: auto;
         min-height: 150vh;
-        background: url('../assets/image/Wireframe\ -\ 1.jpg') rgba(22, 20, 21, 0.384);
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: multiply;
     }
 
     /* Invite */
     .element-invite {
         margin: auto;
-        width: 600px;
+        width: 350px;
         min-height: 100vh;
         background-color: #BFC1CB;
         font-family: inter;
@@ -465,7 +461,7 @@ button:hover {
     /* Akad */
     .element-akad {
         margin: auto;
-        width: 600px;
+        width: 350px;
         min-height: 100vh;
         background-color: #D7D7D7;
     }
@@ -511,7 +507,7 @@ button:hover {
     /* Qoutes */
     .element-qoutes {
         margin: auto;
-        width: 600px;
+        width: 350px;
         min-height: 100vh;
         background-color: #BFC1CB;
     }
@@ -535,7 +531,7 @@ button:hover {
     /* Galery */
     .element-galery {
         margin: auto;
-        width: 600px;
+        width: 350px;
         min-height: 100vh;
         background-color: #D7D7D7;
     }
@@ -543,7 +539,7 @@ button:hover {
     /* Maps */
     .element-maps {
         margin: auto;
-        width: 600px;
+        width: 350px;
         min-height: 100vh;
         background-color: #BFC1CB;
     }
@@ -563,7 +559,7 @@ button:hover {
     /* RSVP */
     .element-rsvp {
         margin: auto;
-        width: 600px;
+        width: 350px;
         min-height: 100vh;
     }
 }
