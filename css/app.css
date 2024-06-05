@@ -384,7 +384,7 @@ button:hover {
     .head-element-section {
         width: 350px;
         margin: auto;
-        min-height: 150vh;
+        min-height: 100vh;
     }
 
     /* Invite */
@@ -398,7 +398,7 @@ button:hover {
 
     .element-invite .container {
         display: flex;
-        padding: 60px 60px;
+        padding: 30px 30px;
         text-align: center;
         align-content: center;
     }
@@ -554,6 +554,10 @@ button:hover {
         padding: 20px 0;
         font-size: 45px;
         font-family: poppins;
+    }
+
+    .element-maps iframe {
+        width: 150px;
     }
 
     /* RSVP */
