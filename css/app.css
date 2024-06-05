@@ -387,6 +387,13 @@ button:hover {
         min-height: 100vh;
     }
 
+    .head-element-section {
+        display: inline;
+        justify-content: center;
+        text-align: center;
+        padding: auto;
+    }
+
     /* Invite */
     .element-invite {
         margin: auto;
@@ -557,7 +564,7 @@ button:hover {
     }
 
     .element-maps iframe {
-        width: 250px;
+        width: 300px;
     }
 
     /* RSVP */
@@ -572,7 +579,11 @@ button:hover {
         width: 80px;
     }
 
+    .element-rsvp .container .element-kado-items .bank-mandiri {
+        padding: 30px 20px;
+    }
+
     .element-rsvp .container .element-kado-items .dana-items {
-        padding: 20px 15px;
+        padding: 30px 20px;
     }
 }
