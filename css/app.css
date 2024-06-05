@@ -417,13 +417,13 @@ button:hover {
     }
 
     .element-invite .container .title-heading h3 {
-        font-size: 25px;
+        font-size: 18px;
         font-family: poppins;
         font-weight: 700;
     }
 
     .element-invite .container .title-heading h4 {
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
         font-weight: 400px;
         font-family: poppins;
@@ -436,13 +436,13 @@ button:hover {
 
     .element-invite .container .title-mempelai-perempuan h1 {
         font-family: "Satisfy", cursive;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 800;
     }
 
     .element-invite .container .title-mempelai-pria h1 {
         font-family: "Satisfy", cursive;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 800;
     }
 
@@ -557,7 +557,7 @@ button:hover {
     }
 
     .element-maps iframe {
-        width: 150px;
+        width: 250px;
     }
 
     /* RSVP */
@@ -565,5 +565,14 @@ button:hover {
         margin: auto;
         width: 350px;
         min-height: 100vh;
+        font-family: poppins;
+    }
+
+    .element-rsvp .container .element-kado-items img {
+        width: 80px;
+    }
+
+    .element-rsvp .container .element-kado-items .dana-items {
+        padding: 20px 15px;
     }
 }
