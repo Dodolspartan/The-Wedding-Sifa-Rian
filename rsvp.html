@@ -4,55 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undangan Digital</title>
+    <title>Salin Nomor Telepon</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Undangan Pernikahan</h1>
-        <p>Anda diundang untuk menghadiri pernikahan kami.</p>
-        <p>Silakan konfirmasi kehadiran Anda:</p>
-        <form id="rsvpForm">
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="attendance">Kehadiran:</label>
-            <select id="attendance" name="attendance" required>
-                <option value="yes">Hadir</option>
-                <option value="no">Tidak Hadir</option>
-            </select>
-
-            <button type="submit">Kirim RSVP via WhatsApp</button>
-        </form>
+        <p>Silakan klik gambar di bawah ini untuk menyalin nomor telepon.</p>
+        <img src="https://satumomen.com/images/aplikasi-undangan-digital-website.webp" width="100" alt="Salin Nomor"
+            id="copyImage">
         <p id="responseMessage"></p>
     </div>
 
-
     <script>
-        document.getElementById('rsvpForm').addEventListener('submit', function (event) {
-            event.preventDefault();
+        document.getElementById('copyImage').addEventListener('click', function () {
+            const phoneNumber = '6281234567890'; // Ganti dengan nomor telepon yang ingin disalin
 
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const attendance = document.getElementById('attendance').value;
-
-            const message = `Nama: ${name}%0AEmail: ${email}%0AKehadiran: ${attendance === 'yes' ? 'Hadir' : 'Tidak Hadir'}`;
-            const phoneNumber = '6289619341758'; // Ganti dengan nomor WhatsApp yang dituju
-            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
-
-            window.open(whatsappUrl, '_blank');
+            const tempInput = document.createElement('input');
+            tempInput.value = phoneNumber;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
 
             const responseMessage = document.getElementById('responseMessage');
-            responseMessage.textContent = `Terima kasih, ${name}! RSVP Anda telah dikirim via WhatsApp.`;
-
-            // Reset form setelah submit
-            document.getElementById('rsvpForm').reset();
+            responseMessage.textContent = `Nomor Dana ${phoneNumber} Telah disalin`;
         });
-
 
     </script>
 </body>
