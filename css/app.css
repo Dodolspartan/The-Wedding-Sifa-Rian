@@ -389,6 +389,11 @@ button:hover {
         background-size: cover;
     }
 
+    .head-element-section .container {
+        margin: auto;
+        padding: auto;
+    }
+
     .head-element-section {
         display: inline;
         justify-content: center;
