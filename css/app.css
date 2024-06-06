@@ -394,13 +394,6 @@ button:hover {
         padding: auto;
     }
 
-    .head-element-section {
-        display: inline;
-        justify-content: center;
-        text-align: center;
-        padding: auto;
-    }
-
     /* Invite */
     .element-invite {
         margin: auto;
