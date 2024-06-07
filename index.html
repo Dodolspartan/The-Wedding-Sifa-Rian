@@ -31,10 +31,10 @@
                     <div class="title-women">
                         <h1 class="text-center">Sifa</h1>
                     </div>
-                    <div style="font-size: 90px; padding: 0 10px; color: black;">
+                    <div style="font-size: 40px; padding: 0 10px; color: black;font-family: Cormorant Garamond;">
                         &
                     </div>
-                    <div class="title-men">
+                    <div class=" title-men">
                         <h1 class="text-center">Rian</h1>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                 <span>&</span>
                 <div class="title-mempelai-pria">
                     <h1>Rian Ari Permana</h1>
-                    <h5>Putri Pertama Bpk.Hasan Basri & Ibu Euis Yuliatin</h5>
+                    <h5>Putra Pertama Bpk.Hasan Basri & Ibu Euis Yuliatin</h5>
                 </div>
             </div>
         </div>
@@ -85,28 +85,37 @@
                 <div class="title-heading-akad">
                     <h1 class="text-center">AKAD NIKAH</h1>
                 </div>
-                <div class=" title-date-akad">
-                    <h2 class="text-center">30</h2>
-                </div>
                 <div class=" title-paraf-akad">
+                    <h3 class="text-center">Minggu,30 Juni 2024</h3>
                     <p class="text-center">07.00 WIB s/d 09.00</p>
-                    <h3 class="text-center">Sunday,Juni 2024</h3>
                 </div>
             </div>
             <div class=" element-resep-nikah">
                 <div class="title-heading-akad">
                     <h1 class="text-center">RESEPSI</h1>
                 </div>
-                <div class=" title-date-akad">
-                    <h2 class="text-center">30</h2>
-                </div>
                 <div class=" title-paraf-akad">
-                    <p class="text-center">Pukul 10.00 WIB</p>
-                    <h3 class="text-center">Sunday,Juni 2024</h3>
+                    <h3 class="text-center">Minggu, 30 Juni 2024</h3>
+                    <p class="text-center">Pukul 10.00 WIB / Selesai</p>
                 </div>
             </div>
-            <div class="element-date">
-                <div id="countdown"></div>
+            <div id="countdown">
+                <div class="countdown-item">
+                    <span id="days" class="number"></span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours" class="number"></span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes" class="number"></span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds" class="number"></span>
+                    <span class="label">Seconds</span>
+                </div>
             </div>
             <div class="element-save-date text-center py-4">
                 <a href="" class=" btn-save-date">Save Date</a>
@@ -153,9 +162,8 @@
             <h1 class="text-center">Maps</h1>
             <div class="element-maps-items text-center">
                 <iframe
-                    src="
-                https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2697978572396!2d106.66214737766916!3d-6.228116667535503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb6b3b4ec51d%3A0xcd2f13d884801d15!2swarung%20pak%20matra!5e0!3m2!1sid!2sid!4v1717185940968!5m2!1sid!2sid"
-                    width="350" height="400" style="border-radius:8px;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!3m2!1sid!2sid!4v1717771267089!5m2!1sid!2sid!6m8!1m7!1sEQrhF5k5QRWXXyWtRcgUGA!2m2!1d-6.227228414352484!2d106.6658274221988!3f182.10387821243208!4f-3.4352107041817703!5f0.7820865974627469"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -218,7 +226,7 @@
             const attendance = document.getElementById('attendance').value;
 
             const message = `Nama: ${name}%0AEmail: ${email}%0AKehadiran: ${attendance === 'yes' ? 'Hadir' : 'Tidak Hadir'}`;
-            const phoneNumber = '6281234567890'; // Ganti dengan nomor WhatsApp yang dituju
+            const phoneNumber = '6287815710562'; // Ganti dengan nomor WhatsApp yang dituju
             const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
 
             window.open(whatsappUrl, '_blank');
