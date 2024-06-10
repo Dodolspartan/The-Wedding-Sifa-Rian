@@ -6,40 +6,40 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 //element date script
-// Set the date we're counting down to
-var countdownDate = new Date("Juni, 30 2024 23:59:59").getTime();
+document.addEventListener("DOMContentLoaded", function () {
+  // Set the date we're counting down to
+  const countDownDate = new Date("Juni 30, 2024 15:00:00").getTime();
 
-// Update the countdown every 1 second
-var countdownFunction = setInterval(function () {
-  // Get today's date and time
-  var now = new Date().getTime();
+  // Update the count down every 1 second
+  const x = setInterval(function () {
+    // Get today's date and time
+    const now = new Date().getTime();
 
-  // Find the distance between now and the countdown date
-  var distance = countdownDate - now;
+    // Find the distance between now and the count down date
+    const distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Time calculations for days, hours, minutes and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="countdown"
-  document.getElementById("countdown").innerHTML =
-    days +
-    " days " +
-    hours +
-    " hours " +
-    minutes +
-    " minutes " +
-    seconds +
-    " seconds ";
+    // Output the result in an element with id="days", "hours", "minutes", "seconds"
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
 
-  // If the countdown is finished, write some text
-  if (distance < 0) {
-    clearInterval(countdownFunction);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
-  }
-}, 1000);
+    // If the count down is over, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.querySelector(".countdown-container").innerHTML =
+        "<h2>Wedding Ceremony Started</h2>";
+    }
+  }, 1000);
+});
 
 // RSVP
 function submitRSVP() {
@@ -76,3 +76,23 @@ function sendDataToServer(name, email) {
   var data = JSON.stringify({ name: name, email: email });
   xhr.send(data);
 }
+// Clipboard Js
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".element-kado-items div");
+
+  elements.forEach((element) => {
+    element.addEventListener("click", () => {
+      const accountNumber = element.getAttribute("data-account-number");
+      navigator.clipboard
+        .writeText(accountNumber)
+        .then(() => {
+          alert(
+            `Nomor rekening ${accountNumber} berhasil disalin ke clipboard.`,
+          );
+        })
+        .catch((err) => {
+          console.error("Gagal menyalin teks: ", err);
+        });
+    });
+  });
+});

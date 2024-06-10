@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <!-- Style Bootstrap -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Animate -->
@@ -24,7 +25,7 @@
     <section class="head-element-section">
         <div class="container">
             <div class="title-wedding">
-                <h6>THE WENDING OF</h6>
+                <h6>THE WENDDING OF</h6>
             </div>
             <div class="image-items">
                 <div class="title-nick-title">
@@ -99,36 +100,39 @@
                     <p class="text-center">Pukul 10.00 WIB / Selesai</p>
                 </div>
             </div>
-            <div id="countdown">
+
+            <div class="countdown">
                 <div class="countdown-item">
-                    <span id="days" class="number"></span>
-                    <span class="label">Days</span>
+                    <span id="days"></span>
+                    <div class="label">Hari</div>
                 </div>
                 <div class="countdown-item">
-                    <span id="hours" class="number"></span>
-                    <span class="label">Hours</span>
+                    <span id="hours"></span>
+                    <div class="label">Jam</div>
                 </div>
                 <div class="countdown-item">
-                    <span id="minutes" class="number"></span>
-                    <span class="label">Minutes</span>
+                    <span id="minutes"></span>
+                    <div class="label">Menit</div>
                 </div>
                 <div class="countdown-item">
-                    <span id="seconds" class="number"></span>
-                    <span class="label">Seconds</span>
+                    <span id="seconds"></span>
+                    <div class="label">Seconds</div>
                 </div>
             </div>
-            <div class="element-save-date text-center py-4">
-                <a href="" class=" btn-save-date">Save Date</a>
+
+            <div class="button mt-5 text-center">
+                <a href="#invite" class="btn-online">Save Date</a>
             </div>
+
         </div>
     </section>
     <!-- #endregion -->
     <!-- Qoutes -->
-    <section class=" element-qoutes" id="qts">
+    <section class="element-qoutes" id="qts">
         <div class="container">
-            <img src="./assets/image/Wireframe - 1.jpg" alt="">
+            <img src="./assets/galery/Foto LP Udangan Digital/Frame 1.jpg" alt="">
             <div class="title-paraf text-center">
-                <p>“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+                <p class="text-center">“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
                     pasangan-pasangan untukmu dari
                     jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia
                     menjadikan di antaramu
@@ -180,11 +184,13 @@
                 </p>
             </div>
             <div class="element-kado-items text-center">
-                <div class="bank-mandiri">
-                    <img src="./assets/payment/Property 1=Bank, Property 2=Mandiri.png" alt="">
+                <div class="bank-mandiri" data-account-number="1234567890">
+                    <p>Copy Bank</p>
+                    <img src="./assets/payment/Property 1=Bank, Property 2=BCA.png" alt="Bank Mandiri">
                 </div>
-                <div class="dana-items">
-                    <img src="./assets/payment/Property 1=Mobile Payment, Property 2=Dana.png" alt="">
+                <div class="dana-items" data-account-number="0987654321">
+                    <p>Copy Bank</p>
+                    <img src="./assets/payment/Property 1=Bank, Property 2=BRI.png" alt="Bank BRI">
                 </div>
             </div>
 
@@ -216,7 +222,6 @@
 
     </section>
     <!-- End -->
-
     <script>
         document.getElementById('rsvpForm').addEventListener('submit', function (event) {
             event.preventDefault();
@@ -239,8 +244,28 @@
         });
 
     </script>
-
     <script src=" ./js/app.js">
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const elements = document.querySelectorAll('.content-items-invite');
+
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', checkVisibility);
+            window.addEventListener('resize', checkVisibility);
+
+            // Initial check in case elements are already in view on load
+            checkVisibility();
+        });
+
     </script>
 </body>
 
