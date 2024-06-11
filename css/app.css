@@ -267,6 +267,8 @@ body {
     font-size: 15px;
 }
 
+
+
 .content-items-invite {
     opacity: 0;
     transform: translateY(20px);
@@ -321,6 +323,16 @@ body {
     font-family: "Cormorant Garamond", serif;
 }
 
+.element-akad .container .title-paraf-akad h3 {
+    font-size: 25px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.element-akad .container .title-date-akad h6 {
+    font-size: 15px;
+    font-family: "Cormorant Garamond", serif;
+}
+
 .element-akad .container .element-save-date .btn-save-date {
     text-align: center;
     padding: 10px 20px;
@@ -338,7 +350,19 @@ body {
     border-radius: 8px;
 }
 
+.element-akad .container .btn-online {
+    padding: 10px 20px;
+    background-color: #a88a74;
+    color: #fff;
+    text-decoration: none;
+    font-family: inter;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
 .countdown {
+    padding: 40px 0;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -409,6 +433,11 @@ body {
     padding: 30px;
 }
 
+.element-galery .container h1 {
+    font-size: 45px;
+    font-family: "Cormorant Garamond", serif;
+}
+
 .element-galery .container .element-content-galery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -438,7 +467,21 @@ body {
 .element-maps .container h1 {
     padding: 20px 0;
     font-size: 45px;
-    font-family: poppins;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.element-maps .container .element-maps-btn {
+    padding: 50px 0;
+}
+
+.element-maps .container .element-maps-btn a {
+    padding: 12px 20px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #a88a74;
+    font-family: inter;
+    color: #fff;
+    border-radius: 8px;
 }
 
 /* RSVP */
@@ -456,6 +499,11 @@ body {
     font-size: 13px;
 }
 
+.element-rsvp .container h1 {
+    font-size: 45px;
+    font-family: "Cormorant Garamond", serif;
+}
+
 .element-rsvp .container .element-kado-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -464,11 +512,12 @@ body {
 }
 
 .element-rsvp .container .element-kado-items img {
-    width: 120px;
+    width: 100px;
+    cursor: grab;
 }
 
 .element-rsvp .container .element-kado-items .bank-mandiri {
-    padding: 40px 25px;
+    padding: 30px 25px;
     background-color: #fff;
     border-radius: 8px;
 }
@@ -478,6 +527,8 @@ body {
     background-color: #fff;
     border-radius: 8px;
 }
+
+
 
 form {
     margin-top: 20px;
@@ -710,6 +761,7 @@ button:hover {
 
     .element-rsvp .container .element-kado-items img {
         width: 80px;
+        cursor: copy;
     }
 
     .element-rsvp .container .element-kado-items .bank-mandiri {
