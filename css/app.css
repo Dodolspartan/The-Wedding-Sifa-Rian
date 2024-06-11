@@ -709,7 +709,7 @@ button:hover {
 
     .element-qoutes .container img {
         width: 100%;
-        border: 7px solid black;
+        border: 3px solid #a88a74;
         border-radius: 14px;
     }
 
@@ -744,7 +744,6 @@ button:hover {
     .element-maps .container h1 {
         padding: 20px 0;
         font-size: 45px;
-        font-family: poppins;
     }
 
     .element-maps iframe {
