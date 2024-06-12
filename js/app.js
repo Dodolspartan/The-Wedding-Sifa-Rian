@@ -21,7 +21,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+// Animasi akad
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(
+    ".element-akad-nikah, .element-resep-nikah, .countdown, .button",
+  );
 
+  function checkVisibility() {
+    elements.forEach((element) => {
+      const rect = element.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        element.classList.add("animate");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+  checkVisibility();
+});
 //element date script
 document.addEventListener("DOMContentLoaded", function () {
   // Set the date we're counting down to

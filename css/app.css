@@ -389,6 +389,38 @@ body {
     font-family: "Cormorant Garamond", serif;
 }
 
+.element-akad-nikah,
+.element-resep-nikah,
+.countdown,
+.button {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.element-akad-nikah {
+    animation-delay: 0s;
+}
+
+.element-resep-nikah {
+    animation-delay: 0.5s;
+}
+
+.countdown {
+    animation-delay: 1s;
+}
+
+.button {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Qoutes */
 .element-qoutes {
     margin: auto;
@@ -404,7 +436,7 @@ body {
 
 .element-qoutes .container img {
     width: 100%;
-    border: 2px solid #72a2cb;
+    border: 2px solid #a88a74;
     border-radius: 14px;
 }
 
@@ -540,6 +572,7 @@ form {
 
 label {
     text-align: left;
+    font-family: inter;
 }
 
 input,
