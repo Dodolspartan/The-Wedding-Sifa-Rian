@@ -1,7 +1,24 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-  const audio = document.getElementById("invitationAudio");
-  audio.play().catch((error) => {
-    console.log("Autoplay was prevented. User interaction is required.");
+document.addEventListener("DOMContentLoaded", function () {
+  var music = document.getElementById("backgroundMusic");
+  var controlButton = document.getElementById("controlButton");
+  var controlIcon = document.getElementById("controlIcon");
+
+  // Play music automatically when the website loads
+  music.play();
+  controlButton.classList.add("rotate");
+
+  controlButton.addEventListener("click", function () {
+    if (music.paused) {
+      music.play();
+      controlIcon.classList.remove("fa-play");
+      controlIcon.classList.add("fa-pause");
+      controlButton.classList.add("rotate");
+    } else {
+      music.pause();
+      controlIcon.classList.remove("fa-pause");
+      controlIcon.classList.add("fa-play");
+      controlButton.classList.remove("rotate");
+    }
   });
 });
 

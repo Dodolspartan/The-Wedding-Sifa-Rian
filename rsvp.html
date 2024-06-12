@@ -1,37 +1,80 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salin Nomor Telepon</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Website dengan Musik Otomatis</title>
+    <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+        .control-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: transform 0.5s ease;
+        }
+
+        .control-button.rotate {
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Undangan Pernikahan</h1>
-        <p>Silakan klik gambar di bawah ini untuk menyalin nomor telepon.</p>
-        <img src="https://satumomen.com/images/aplikasi-undangan-digital-website.webp" width="100" alt="Salin Nomor"
-            id="copyImage">
-        <p id="responseMessage"></p>
-    </div>
+
+    <button id="controlButton" class="control-button">
+        <i id="controlIcon" class="fas fa-pause"></i>
+    </button>
+
+    <audio id="backgroundMusic" loop>
+        <source
+            src="./assets/image/audio/SnapSave.io - [SABILULUNGAN] SUNDANESE INSTRUMENTALIA _ DEGUNG SUNDA _ INDONESIAN TRADITIONAL MUSIC (128 kbps).mp3"
+            type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
     <script>
-        document.getElementById('copyImage').addEventListener('click', function () {
-            const phoneNumber = '6281234567890'; // Ganti dengan nomor telepon yang ingin disalin
+        document.addEventListener('DOMContentLoaded', function () {
+            var music = document.getElementById('backgroundMusic');
+            var controlButton = document.getElementById('controlButton');
+            var controlIcon = document.getElementById('controlIcon');
 
-            const tempInput = document.createElement('input');
-            tempInput.value = phoneNumber;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempInput);
+            // Play music automatically when the website loads
+            music.play();
+            controlButton.classList.add('rotate');
 
-            const responseMessage = document.getElementById('responseMessage');
-            responseMessage.textContent = `Nomor Dana ${phoneNumber} Telah disalin`;
+            controlButton.addEventListener('click', function () {
+                if (music.paused) {
+                    music.play();
+                    controlIcon.classList.remove('fa-play');
+                    controlIcon.classList.add('fa-pause');
+                    controlButton.classList.add('rotate');
+                } else {
+                    music.pause();
+                    controlIcon.classList.remove('fa-pause');
+                    controlIcon.classList.add('fa-play');
+                    controlButton.classList.remove('rotate');
+                }
+            });
         });
-
     </script>
 </body>
 
