@@ -589,6 +589,21 @@ button:hover {
     transition: transform 0.5s ease;
 }
 
+.control-button:hover {
+    width: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #a88a74;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
 .control-button.rotate {
     animation: rotate 2s linear infinite;
 }
