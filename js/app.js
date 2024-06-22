@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var controlIcon = document.getElementById("controlIcon");
 
   // Play music automatically when the website loads
-  music.play();
+  music.play().catch((error) => {
+    // Handle autoplay block
+    console.log("Autoplay was prevented:", error);
+  });
   controlButton.classList.add("rotate");
 
   controlButton.addEventListener("click", function () {
@@ -21,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 // Animasi akad
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(
