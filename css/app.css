@@ -631,25 +631,27 @@ button:hover {
 }
 
 .control-button {
-    width: 70px;
+    width: 50px;
+    height: 50px;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     background-color: #a88a74;
     color: white;
     border: none;
     padding: 15px;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 50%;
     transition: transform 0.5s ease;
 }
 
 .control-button:hover {
-    width: 70px;
+    width: 50px;
+    height: 50px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
     background-color: #a88a74;
     color: white;
     border: none;
