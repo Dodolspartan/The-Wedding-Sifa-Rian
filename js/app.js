@@ -130,3 +130,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+// Animate Galery
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".animate__animated");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate__fadeInUp");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    },
+  );
+
+  items.forEach((item) => {
+    observer.observe(item);
+  });
+});
